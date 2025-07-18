@@ -1,4 +1,4 @@
-# Time Calculator
+# ⌛ Time Calculator ⌛
 A simple Python script to add time durations to a given start time, with support for 12-hour and 24-hour formats and optional weekday calculations.
 
 ## Features
