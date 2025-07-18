@@ -12,6 +12,7 @@ Run the script with a start time, duration, and optional starting day:
 ```python
 add_time("8:30 AM", "2:45")  # Returns "11:15 AM"
 add_time("11:30 PM", "3:45", "Monday")  # Returns "3:15 AM, Tuesday (next day)"
+add_time("11:59 PM", "24:05", "Wednesday")  # Returns: "12:04 AM, Friday (2 days later)"
 ```
 
 ## How It Works
@@ -20,14 +21,7 @@ add_time("11:30 PM", "3:45", "Monday")  # Returns "3:15 AM, Tuesday (next day)"
 - **Day Tracking**: If a weekday is provided, calculates the resulting day based on the duration (e.g., adds days if time exceeds 24 hours).
 - **Output Formatting**: Returns the result in 12-hour format with proper AM/PM and day information.
 
-## Example
-```python
-print(add_time("3:00 PM", "3:10"))  # Output: "6:10 PM"
-print(add_time("11:30 AM", "2:32", "Monday"))  # Output: "2:02 PM, Monday"
-print(add_time("11:59 PM", "24:05", "Wednesday"))  # Output: "12:04 AM, Friday (2 days later)"
-```
-
 ## Notes
 - The script assumes valid input formats (e.g., "HH:MM AM/PM" for start time, "HH:MM" for duration).
 - Weekdays are case-insensitive (e.g., "monday" or "Monday" both work).
-- Built with ❤️ by Ehsan for quick and reliable time calculations.
+- Built with ❤️ by Ehsan.
